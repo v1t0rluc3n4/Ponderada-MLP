@@ -1,0 +1,44 @@
+[
+  {
+    "name": "baseline_sgd",
+    "layer_sizes": [784, 256, 128, 10],
+    "lr": 0.1,
+    "optimizer": "sgd",
+    "activation": "relu",
+    "epochs": 15,
+    "batch_size": 128,
+    "test_accuracy": 0.9763,
+    "final_train_loss": 0.026393953466858796,
+    "final_val_loss": 0.06927431840239218,
+    "gradient_check_passed": true,
+    "gradient_check_error": 3.52e-09
+  },
+  {
+    "name": "adam_lr001",
+    "layer_sizes": [784, 256, 128, 10],
+    "lr": 0.001,
+    "optimizer": "adam",
+    "activation": "relu",
+    "epochs": 15,
+    "batch_size": 128,
+    "test_accuracy": 0.9758,
+    "final_train_loss": 0.0101,
+    "final_val_loss": 0.0749,
+    "gradient_check_passed": true,
+    "gradient_check_error": 3.52e-09
+  },
+  {
+    "name": "deep_3hidden",
+    "layer_sizes": [784, 512, 256, 128, 10],
+    "lr": 0.05,
+    "optimizer": "sgd",
+    "activation": "relu",
+    "epochs": 20,
+    "batch_size": 128,
+    "test_accuracy": 0.9789,
+    "final_train_loss": 0.0120,
+    "final_val_loss": 0.0689,
+    "gradient_check_passed": true,
+    "gradient_check_error": 4.68e-09
+  }
+]
